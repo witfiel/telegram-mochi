@@ -31,3 +31,16 @@
 2026-06-01 16:20:07 | INFO     | __main__:main:11 - User columns: ['id', 'is_bot', 'first_name', 'last_name', 'username', 'phone_number', 'language_code', 'is_premium', 'raw_data', 'created_at', 'updated_at']
 2026-06-01 16:20:07 | INFO     | src.core.database:close:32 - Database connection closed
 2026-06-01 16:20:07 | INFO     | __main__:main:14 - Database test passed
+2026-06-01 16:34:07 | INFO     | src.core.database:__init__:23 - Database initialized: sqlite+aiosqlite:///./telegram_client.db
+2026-06-01 16:34:07 | INFO     | __main__:main:7 - Testing database initialize
+2026-06-01 16:34:07 | INFO     | src.core.database:create_tables:28 - Database tables created
+2026-06-01 16:34:07 | INFO     | __main__:main:10 - User table created: users
+2026-06-01 16:34:24 | INFO     | src.core.database:__init__:23 - Database initialized: sqlite+aiosqlite:///./telegram_client.db
+2026-06-01 16:34:24 | INFO     | __main__:main:7 - Testing database initialize
+2026-06-01 16:34:24 | INFO     | src.core.database:create_tables:28 - Database tables created
+2026-06-01 16:34:24 | INFO     | __main__:main:10 - User table created: users
+2026-06-01 16:34:24 | INFO     | __main__:main:11 - Chat table: chats
+2026-06-01 16:34:24 | INFO     | __main__:main:13 - User columns: ['id', 'is_bot', 'first_name', 'last_name', 'username', 'phone_number', 'language_code', 'is_premium', 'raw_data', 'created_at', 'updated_at']
+2026-06-01 16:34:24 | INFO     | __main__:main:14 - Chat columns: ['id', 'type', 'title', 'username', 'description', 'is_bot', 'phone_number', 'is_premium', 'is_pinned', 'is_archived', 'is_muted', 'is_read', 'unread_count', 'last_message_id', 'raw_data', 'created_at', 'updated_at', 'last_message_date']
+2026-06-01 16:34:24 | INFO     | src.core.database:close:32 - Database connection closed
+2026-06-01 16:34:24 | INFO     | __main__:main:17 - Database test passed
