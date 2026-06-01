@@ -1,3 +1,33 @@
 2026-06-01 00:43:11 | INFO     | __main__:<module>:3 - Logger working?
 2026-06-01 00:43:11 | DEBUG    | __main__:<module>:4 - Debug message
 2026-06-01 00:43:11 | ERROR    | __main__:<module>:5 - Error message
+2026-06-01 14:51:14 | INFO     | src.core.database:__init__:22 - Database initialized: sqlite+aiosqlite:///./telegram_client.db
+2026-06-01 14:51:51 | INFO     | src.core.database:__init__:22 - Database initialized: sqlite+aiosqlite:///./telegram_client.db
+2026-06-01 14:52:22 | INFO     | src.core.database:__init__:22 - Database initialized: sqlite+aiosqlite:///./telegram_client.db
+2026-06-01 14:53:02 | INFO     | src.core.database:__init__:22 - Database initialized: sqlite+aiosqlite:///./telegram_client.db
+2026-06-01 14:53:02 | INFO     | __main__:main:7 - Testing database initialize
+2026-06-01 14:54:13 | INFO     | src.core.database:__init__:22 - Database initialized: sqlite+aiosqlite:///./telegram_client.db
+2026-06-01 14:54:13 | INFO     | __main__:main:7 - Testing database initialize
+2026-06-01 14:55:48 | INFO     | src.core.database:__init__:22 - Database initialized: sqlite+aiosqlite:///./telegram_client.db
+2026-06-01 14:55:48 | INFO     | __main__:main:7 - Testing database initialize
+2026-06-01 16:18:28 | INFO     | src.core.database:__init__:23 - Database initialized: sqlite+aiosqlite:///./telegram_client.db
+2026-06-01 16:18:28 | INFO     | __main__:main:7 - Testing database initialize
+2026-06-01 16:18:29 | INFO     | src.core.database:create_tables:28 - Database tables created
+2026-06-01 16:19:16 | INFO     | src.core.database:__init__:23 - Database initialized: sqlite+aiosqlite:///./telegram_client.db
+2026-06-01 16:19:16 | INFO     | __main__:main:7 - Testing database initialize
+2026-06-01 16:19:16 | INFO     | src.core.database:create_tables:28 - Database tables created
+2026-06-01 16:19:16 | INFO     | __main__:main:10 - User table created: users
+2026-06-01 16:19:33 | INFO     | src.core.database:__init__:23 - Database initialized: sqlite+aiosqlite:///./telegram_client.db
+2026-06-01 16:19:33 | INFO     | __main__:main:7 - Testing database initialize
+2026-06-01 16:19:33 | INFO     | src.core.database:create_tables:28 - Database tables created
+2026-06-01 16:19:33 | INFO     | __main__:main:10 - User table created: users
+2026-06-01 16:19:33 | INFO     | __main__:main:11 - User columns: ['id', 'is_bot', 'first_name', 'last_name', 'username', 'phone_number', 'language_code', 'is_premium', 'raw_data', 'created_at', 'updated_at']
+2026-06-01 16:19:33 | INFO     | src.core.database:close:32 - Database connection closed
+2026-06-01 16:19:33 | INFO     | __main__:main:14 - Database test passed
+2026-06-01 16:20:07 | INFO     | src.core.database:__init__:23 - Database initialized: sqlite+aiosqlite:///./telegram_client.db
+2026-06-01 16:20:07 | INFO     | __main__:main:7 - Testing database initialize
+2026-06-01 16:20:07 | INFO     | src.core.database:create_tables:28 - Database tables created
+2026-06-01 16:20:07 | INFO     | __main__:main:10 - User table created: users
+2026-06-01 16:20:07 | INFO     | __main__:main:11 - User columns: ['id', 'is_bot', 'first_name', 'last_name', 'username', 'phone_number', 'language_code', 'is_premium', 'raw_data', 'created_at', 'updated_at']
+2026-06-01 16:20:07 | INFO     | src.core.database:close:32 - Database connection closed
+2026-06-01 16:20:07 | INFO     | __main__:main:14 - Database test passed

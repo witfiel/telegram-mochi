@@ -1,10 +1,15 @@
 import asyncio
-from src.core.database import db
+from src.core.database import db, Base
+from src.models import User
 from src.utils.logger import log
 
 async def main():
     log.info("Testing database initialize")
     await db.create_tables()
+
+    log.info(f"User table created: {User.__tablename__}")
+    log.info(f"User columns: {[col.name for col in User.__table__.columns]}")
+
     await db.close()
     log.info("Database test passed")
 

@@ -1,26 +1,29 @@
-from pydantic_settings import BaseSettings
+from pydantic_settings import BaseSettings, SettingsConfigDict
 from pydantic import Field
 from typing import Optional
 
 class Settings(BaseSettings):
 
-    api_id: int = Field(..., env="TELEGRAM_API_ID")
-    api_hash: str = Field(..., env="TELEGRAM_API_HASH")
+    model_config = SettingsConfigDict(
+        env_file=".env",
+        env_file_encoding="utf-8",
+        case_sensitive=False,
+        extra="ignore",
+        env_prefix="TELEGRAM_"
+    )
 
-    session_path: str = Field("./session", env="SESSION_PATH")
+    api_id: int = Field(..., description="Telegram API ID")
+    api_hash: str = Field(..., description="Telegram API Hash")
 
-    database_url: str = Field("sqlite+aiosqlite:///./telegram_client.db", env="DATABASE_URL")
+    session_path: str = Field("./session")
 
-    proxy_enabled: bool = Field(False, env="PROXY_ENABLED")
-    proxy_type: Optional[str] = Field(None, env="PROXY_TYPE")
-    proxy_host: Optional[str] = Field(None, env="PROXY_HOST")
-    proxy_port: Optional[str] = Field(None, env="PROXY_PORT")
-    theme: str = Field("light", env="THEME")
-    language: str = Field("en", env="LANGUAGE")
+    database_url: str = Field("sqlite+aiosqlite:///./telegram_client.db")
 
-    class Config:
-        env_file = ".env"
-        env_file_encoding = "utf-8"
-        case_sensitive = True
+    proxy_enabled: bool = Field(False)
+    proxy_type: Optional[str] = Field(None)
+    proxy_host: Optional[str] = Field(None)
+    proxy_port: Optional[str] = Field(None)
+    theme: str = Field("light")
+    language: str = Field("en")
 
 settings = Settings()
